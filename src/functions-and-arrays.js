@@ -7,7 +7,6 @@ function maxOfTwoNumbers(num1, num2) {
 }
 }
 
-
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
@@ -17,19 +16,12 @@ function findLongestWord(words) {
     words.forEach(function(element){
       strWordCount.push(element.lenght);
     });
-
-    let greaterIndex=0;
-    strWordCount.forEach(function(elementNew) {
-      if(greaterIndex < elementNew){
-        greaterIndex = elementNew;
-      }
-    });
     return words[strWordCount.indexOf(greaterIndex)];
   } else {
   return null;
+  } 
+    return 
   }
-}
-
 
 
 // Iteration #3: Calculate the sum
@@ -107,7 +99,6 @@ function uniquifyArray(wordsUnique) {
 }
 
 
-
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
@@ -138,15 +129,13 @@ const wordsCount = [
 
 function howManyTimes(repWord, arrWord) {
 
-if (repWord.lenght === 0){
-  return 0
-}
 let manyWords = repWord.filter((repWord) => repWord= arrWord);
   if (repWord.indexOf(arrWord) === -1) {
     return 0;
-  } else if (manyWords.lenght === 1){
+  } 
+  if (repWord.lenght(arrWord) === 1){
       return 1; 
-    } else if (manyWords.lenght === 5) {
+    } if (repWord.lenght(arrWord) === 5) {
       return 5;
     }
   }
